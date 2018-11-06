@@ -27,28 +27,48 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        card1.isEnabled = true
+        card2.isEnabled = true
+        card3.isEnabled = true
   }
+    
+    
+    
 
 /////Code
     
     @IBAction func flippingCards(_ sender: UIButton) {
-//        var newColor:(color: UIColor?, name: String)?
+      
         let cardArray: [Int] = [0,1,2]
         let randomCard =  cardArray.randomElement()
-        switch randomCard {
+        switch sender.tag {
         case 0:
-            //if let randomCard == sender {
-            card1.setImage(UIImage.init(named: "threeCard"), for: .normal)
-            card2.setImage(UIImage.init(named: "kingCard"), for: .normal)
-            card3.setImage(UIImage.init(named: "threeCard"), for: .normal)
-            //}
+            if randomCard == sender.tag {
+            
+            card1.setImage(UIImage.init(named: "kingCard"), for: .normal)
+                card2.isEnabled = false
+                card3.isEnabled = false
+            } else {
+                
+                card1.setImage(UIImage.init(named: "threeCard"), for: .normal)
+                card2.setImage(UIImage.init(named: "kingCard"), for: .normal)
+                card3.isEnabled = false
+            }
+            
         case 1:
+            if randomCard == sender.tag {
             card1.setImage(UIImage.init(named: "kingCard"), for: .normal)
             card2.setImage(UIImage.init(named: "threeCard"), for: .normal)
             card3.setImage(UIImage.init(named: "threeCard"), for: .normal)
-            
+            }
         case 2:
-           card1.setImage(UIImage.init(named: "threeCard"), for: .normal)
+                if randomCard == sender.tag {
+            card1.setImage(UIImage.init(named: "threeCard"), for: .normal)
+            card2.setImage(UIImage.init(named: "kingCard"), for: .normal)
+            card3.setImage(UIImage.init(named: "threeCard"), for: .normal)
+                }
         default:
             print("invalid tag")
         }
@@ -57,6 +77,9 @@ class ViewController: UIViewController {
         card1.setImage(UIImage.init(named: "cardBackRed"), for: .normal)
         card2.setImage(UIImage.init(named: "cardBackRed"), for: .normal)
         card3.setImage(UIImage.init(named: "cardBackRed"), for: .normal)
+            card1.isEnabled = true
+            card2.isEnabled = true
+            card3.isEnabled = true
     }
 }
 
