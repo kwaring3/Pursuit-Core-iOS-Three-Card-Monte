@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="cardBackRed"/>
                                 <connections>
-                                    <action selector="flippingCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWg-Zg-h7B"/>
+                                    <action selector="flippingCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vCr-kA-fMy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXn-HE-1sD">
@@ -30,57 +30,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="cardBackRed"/>
                                 <connections>
-                                    <action selector="flippingCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeV-f0-jzH"/>
+                                    <action selector="flippingCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ff-w9-FlG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Monte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhO-x3-abd">
+                                <rect key="frame" x="131" y="95" width="153" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8P-WC-Q3X">
                                 <rect key="frame" x="164" y="284" width="105" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="cardBackRed"/>
                                 <connections>
-                                    <action selector="flippingCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELk-3S-YBw"/>
+                                    <action selector="flippingCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPO-cP-hgK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI3-Ko-Ijc">
-                                <rect key="frame" x="166" y="541" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ww-Bn-GA6">
-                                <rect key="frame" x="28" y="464" width="366" height="21"/>
+                                <rect key="frame" x="20" y="581" width="374" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g32-9z-nRx">
-                                <rect key="frame" x="172" y="541" width="88" height="30"/>
+                                <rect key="frame" x="28" y="654" width="366" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Replay game"/>
                                 <connections>
-                                    <action selector="resetCardsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRH-iM-yoU"/>
+                                    <action selector="resetCardsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmw-fc-00J"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Wins:    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4O7-H6-QN6">
-                                <rect key="frame" x="49" y="182" width="117" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Wins:    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4O7-H6-QN6">
+                                <rect key="frame" x="28" y="182" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Loses:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCb-k9-vrT">
-                                <rect key="frame" x="261" y="181" width="68" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Loses:   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCb-k9-vrT">
+                                <rect key="frame" x="261" y="181" width="133" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Monte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhO-x3-abd">
-                                <rect key="frame" x="131" y="95" width="153" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -89,12 +83,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="card1" destination="Yhl-7n-lHp" id="Cht-VZ-cAH"/>
-                        <outlet property="card2" destination="Y8P-WC-Q3X" id="qDZ-yQ-mn5"/>
-                        <outlet property="card3" destination="jXn-HE-1sD" id="wWr-9f-dMJ"/>
-                        <outlet property="mainLabel" destination="yhO-x3-abd" id="dSS-GW-7P8"/>
-                        <outlet property="messageLabel" destination="1Ww-Bn-GA6" id="O0n-wv-8Ht"/>
-                        <outlet property="replayGame" destination="g32-9z-nRx" id="f9W-qG-1rd"/>
+                        <outlet property="card1" destination="Yhl-7n-lHp" id="eGR-1r-A71"/>
+                        <outlet property="card2" destination="Y8P-WC-Q3X" id="0Kg-uF-Uji"/>
+                        <outlet property="card3" destination="jXn-HE-1sD" id="jZI-wC-aSY"/>
+                        <outlet property="loses" destination="SCb-k9-vrT" id="lZx-y7-7XJ"/>
+                        <outlet property="mainLabel" destination="1Ww-Bn-GA6" id="Ce0-lE-LFO"/>
+                        <outlet property="replayGame" destination="g32-9z-nRx" id="KeC-FU-wCY"/>
+                        <outlet property="wins" destination="4O7-H6-QN6" id="8Mk-g2-gEa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
